@@ -135,7 +135,7 @@ class Playwright
       WHERE
         playwright_id = ?
     SQL
-    data.map { |datum| Play.new(datum)}
+    data.map { |datum| Play.new(datum) }
   end
 
 end
