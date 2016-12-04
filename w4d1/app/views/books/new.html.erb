@@ -1,0 +1,42 @@
+<h1>Add a Book</h1>
+
+<% if flash.now[:errors] %>
+  <ul>
+    <% flash.now[:errors].each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% if @book.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@book.errors.count, "error") %> prohibited
+      this book from being saved:
+    </h2>
+    <ul>
+      <% @book.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<form action= <%= books_url %> method="POST">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <label>Title
+  <input type="text" name="book[title]">
+  </label>
+  <br>
+
+  <label>Author
+  <input type="text" name="book[author]">
+  </label>
+  <br>
+
+  <input type="submit">
+</form>
