@@ -1,16 +1,3 @@
-<!-- Create a header section at the top
-Add an image of the app-academy logo within the header section
-Add a nav element within the header, after the logo
-Cut and paste your unordered list of anchor links into the nav section
-Add an aside element
-Cut and paste all of the ingredients elements into the aside
-Put the recipe image inside of a figure element
-Add a figurecaption element below the figure
-Cut the link to wikipedia from your description paragraph and paste it into the figcaption element
-Add a section element to contain the figure, description and instruction elements
-Add a footer element at the bottom
-Add a paragraph element in the footer with some text/link about where the recipe originated from. -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -79,6 +66,40 @@ Add a paragraph element in the footer with some text/link about where the recipe
         <li>Turn off the heat and add chopped parsley, olives and lemon juice. Let Solyanka rest covered for at least 20 minutes before serving to develop the flavor.</li>
         <li>Serve garnished with lemon slices and dollop of sour cream.</li>
       </ol>
+    </section>
+
+    <section id="review">
+      <h2> Place your review </h2>
+      <form class="review" action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="review[name]" value="" id="name">
+
+        <br>
+
+        <label for="rating">Rate the recipe</label>
+        1<input type="radio" name="review[rating]" value="1" id="rating">
+        2<input type="radio" name="review[rating]" value="2" id="rating">
+        3<input type="radio" name="review[rating]" value="3" id="rating">
+        4<input type="radio" name="review[rating]" value="4" id="rating">
+        5<input type="radio" name="review[rating]" value="5" id="rating">
+
+        <br>
+
+        <label for="expertise">Cooking Expertise</label>
+        <select class="" name="review[expertise]" id="expertise">
+          <option value="Select Cooking Expertise" disabled selected>--Select Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+
+        <br>
+
+        <label for="review">
+          <textarea name="review[text]" rows="8" cols="80" id="review"></textarea>
+        </label>
+      </form>
     </section>
 
     <footer>
