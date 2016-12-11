@@ -1,10 +1,13 @@
-**Setup**: 
+**Setup**:
 
 - models, migrations, validations, associations
-- all necessary methods for manage user password_digest and session_token. auth_stuff
-- user stuff (routes, actions and views for creating new user)
-- sessions stuff (routes, actions and views for login and logout) -> works with user model 4) general helpers stuff ( current_user, log_in, log_out, require_login)
-- errors and username, signin, signup, signout button in application.html.erb - so it`s on every page.
+- all necessary methods for manage user password_digest and session_token
+
+**Auth_stuff**:
+- *user stuff* (routes, actions and views for creating new user)
+- *sessions stuff* (routes, actions and views for login and logout) -> works with user model
+- *general helpers stuff* ( current_user, log_in, log_out, require_login)
+- *errors and username, signin, signup, signout button* in application.html.erb - so it`s on every page.
 
 - all above should be the same or almost the same on the real assessment. it`s general pattern that we did all this week. 
 
