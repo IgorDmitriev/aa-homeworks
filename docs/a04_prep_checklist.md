@@ -1,9 +1,9 @@
-**Setup**:
+#Setup
 
 - models, migrations, validations, associations
 - all necessary methods for manage user password_digest and session_token
 
-**Auth_stuff**:
+##Auth
 - user stuff (routes, actions and views for creating new user)
 - sessions stuff (routes, actions and views for login and logout)
   - works with user model
@@ -13,16 +13,19 @@
 All above should be the same or almost the same on the real assessment.
 Its general pattern that we did all this week.
 
-**Other stuff**:
+##Other
 
 All controllers and views for CRUD are super similar. Differs only in
 naming and instance variables (columns). So u can basically copy-paste
 most of them. 
 
-**Think what action and routes u might need. Check docs, specs, common sense.**
+##Think what action and routes u might need.
+**Check docs, specs, common sense.**
 
-1. **create routes** - don’t nest until u need, create all routes if not sure.
-2. **create actions**
+## Create Routes
+  - don’t nest until u need, create all routes if not sure.
+
+## Create Actions
   1. **#model_params** - helper method for params for current model object.
   2. **#index** - render view with all objects
   3. **#show** - render view with current object (id from params)
@@ -36,8 +39,9 @@ most of them. 
     2. if saves successfully -> goes to #show
     3. if not -> render back #new and shows errors
   8. **#destroy** - delete action, destroy object from DB and redirect to #index or parent #show.
-3. **create views**
-  1. dont forget for **authenticity token** for forms!
+
+## Create Views
+  1. Do not forget for **authenticity token** for forms!
   2. **Copy -> Paste -> Edit forms!**
   3. **#new**
     1. title
