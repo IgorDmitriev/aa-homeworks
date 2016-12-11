@@ -23,33 +23,33 @@ most of them. 
 
 1. **create routes** - don’t nest until u need, create all routes if not sure.
 2. **create actions**
-    a. **#model_params** - helper method for params for current model object.
-    b. **#index** - render view with all objects
-    c. **#show** - render view with current object (id from params)
-    d. **#new** - render view with new object
-    e. **#edit** - render view with current object (id from params)
-    f. **#update** - post action with logic for #edit (gets data from params)
-        1. if updates attributes successfully -> goes to #show
-        2. if not -> render back #edit and shows errors
-    g. **#create** - post action with logic for #new (gets data from params)
-        1. creates new object and set all data
-        2. if saves successfully -> goes to #show
-        3. if not -> render back #new and shows errors
-    8. **#destroy** - delete action, destroy object from DB and redirect to #index or parent #show.
+  1. **#model_params** - helper method for params for current model object.
+  2. **#index** - render view with all objects
+  3. **#show** - render view with current object (id from params)
+  4. **#new** - render view with new object
+  5. **#edit** - render view with current object (id from params)
+  6. **#update** - post action with logic for #edit (gets data from params)
+    1. if updates attributes successfully -> goes to #show
+    2. if not -> render back #edit and shows errors
+  7. **#create** - post action with logic for #new (gets data from params)
+    1. creates new object and set all data
+    2. if saves successfully -> goes to #show
+    3. if not -> render back #new and shows errors
+  8. **#destroy** - delete action, destroy object from DB and redirect to #index or parent #show.
 3. **create views**
-    1. dont forget for **authenticity token** for forms!
-    2. **Copy -> Paste -> Edit forms!**
-    3. **#new**
-        1. title
-        2. form (**#create route**) with input elements for every needed to be filled column
-    4. **#edit**
-        1. title
-        2. form (**#update route**), add **hidden input for \_method update**. other should be almost the same as #new
-    5. **#show**
-        1. display all fields
-        2. link to #edit
-        3. link to #destroy (sometimes)
-        4. any specific things ( render child objects, link to create new child object etc.)
-    6. **#index**
-        1. render all objects as list of links
-        2. link to #new
+  1. dont forget for **authenticity token** for forms!
+  2. **Copy -> Paste -> Edit forms!**
+  3. **#new**
+    1. title
+    2. form (**#create route**) with input elements for every needed to be filled column
+  4. **#edit**
+    1. title
+    2. form (**#update route**), add **hidden input for \_method update**. other should be almost the same as #new
+  5. **#show**
+    1. display all fields
+    2. link to #edit
+    3. link to #destroy (sometimes)
+    4. any specific things ( render child objects, link to create new child object etc.)
+  6. **#index**
+    1. render all objects as list of links
+    2. link to #new
