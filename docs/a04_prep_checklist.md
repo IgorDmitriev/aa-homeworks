@@ -1,9 +1,16 @@
-setup: 
-0) models, migrations, validations, associations 
-1) all necessary methods for manage user password_digest and session_token.  auth_stuff:
-2) user stuff (routes, actions and views for creating new user)
- 3) sessions stuff (routes, actions and views for login and logout) -> works with user model 4) general helpers stuff ( current_user, log_in, log_out, require_login)
-5) errors and username, signin, signup, signout button in application.html.erb - so it`s on every page.  - all above should be the same or almost the same on the real assessment. it`s general pattern that we did all this week.   other_stuff: -as u can see all controllers and views for CRUD are super similar. Differs only in naming and instance variables (columns). So u can basically copy-paste most of them. All you need is to keep make all stuff sense in your head and understand what’s going on.  i follow this pattern:
+**Setup**: 
+
+- models, migrations, validations, associations
+- all necessary methods for manage user password_digest and session_token. auth_stuff
+- user stuff (routes, actions and views for creating new user)
+- sessions stuff (routes, actions and views for login and logout) -> works with user model 4) general helpers stuff ( current_user, log_in, log_out, require_login)
+- errors and username, signin, signup, signout button in application.html.erb - so it`s on every page.
+
+- all above should be the same or almost the same on the real assessment. it`s general pattern that we did all this week. 
+
+**other_stuff**:
+
+-as u can see all controllers and views for CRUD are super similar. Differs only in naming and instance variables (columns). So u can basically copy-paste most of them. All you need is to keep make all stuff sense in your head and understand what’s going on.  i follow this pattern:
 
 Think what action and routes u might need. Check docs or specs, common sense.
 
