@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="The most russian solyanka`s recipe ever.">
-    <script type="text/javascript" src="recipe.js"/>
+    <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="recipe.css" type="text/css">
+    <script type="text/javascript" src="recipe.js"/>
 
     <title>Igor Dmitriev`s Solyanka Recipe</title>
 
@@ -23,8 +24,7 @@
   <body>
     <header style="background-color: #ff3850">
       <img
-        src="https://d3ec71zsp1ok15.cloudfront.net/assets/shared/logos/aa-full-white-b025088b6f2d38b07911985400650eb002f96b64c2df0705ca27fae8636ceb29.svg"
-        width="100px">
+        src="https://d3ec71zsp1ok15.cloudfront.net/assets/shared/logos/aa-full-white-b025088b6f2d38b07911985400650eb002f96b64c2df0705ca27fae8636ceb29.svg">
       <nav>
         <ul>
           <li><a href="#description">Description</a></li>
@@ -33,26 +33,27 @@
         </ul>
       </nav>
     </header>
-    <aside>
-      <h2 id="ingredients">Ingredients</h2>
-      <ul>
-        <li>1 lb beef shank/roast</li>
-        <li>1 lb smoked cuts (bacon, ribs, ham, salami, sausage), diced</li>
-        <li>½ cup pickled cucumbers, diced</li>
-        <li>1 medium yellow onion, chopped</li>
-        <li>1 medium carrot, finely shredded</li>
-        <li>⅓ cup tomato sauce</li>
-        <li>⅓ cup olives</li>
-        <li>1 tsp smoked paprika</li>
-        <li>salt and freshly ground black pepper</li>
-        <li>few bay leaves and peppercorns</li>
-        <li>1 tbsp fresh parsley, chopped</li>
-        <li>½ lemon juice</li>
-        <li>1 tbsp olive oil</li>
-        <li>sour cream and lemon slices (to garnish)</li>
-      </ul>
-    </aside>
-    <section>
+
+    <section class='recipe'>
+      <aside>
+        <h2 id="ingredients">Ingredients</h2>
+        <ul class="list-ingredients">
+          <li>1 lb beef shank/roast</li>
+          <li>1 lb smoked cuts (bacon, ribs, ham, salami, sausage), diced</li>
+          <li>½ cup pickled cucumbers, diced</li>
+          <li>1 medium yellow onion, chopped</li>
+          <li>1 medium carrot, finely shredded</li>
+          <li>⅓ cup tomato sauce</li>
+          <li>⅓ cup olives</li>
+          <li>1 tsp smoked paprika</li>
+          <li>salt and freshly ground black pepper</li>
+          <li>few bay leaves and peppercorns</li>
+          <li>1 tbsp fresh parsley, chopped</li>
+          <li>½ lemon juice</li>
+          <li>1 tbsp olive oil</li>
+          <li>sour cream and lemon slices (to garnish)</li>
+        </ul>
+      </aside>
       <figure>
         <img
           src="https://i1.wp.com/www.gastrosenses.com/wp-content/uploads/2015/11/Rustic-Smoked-and-Sour-Soup-Solyanka-2.jpg"
@@ -62,7 +63,10 @@
       <figcaption>
         <a href="https://en.wikipedia.org/wiki/Solyanka">Wikipedia</a>
       </figcaption>
-      <h1>Rustic Smoked and Sour Soup - Solyanka</h1>
+    </section>
+
+    <h1>Rustic Smoked and Sour Soup - Solyanka</h1>
+    <section class='description'>
       <h2 id="description">Description</h2>
       <p>Solyanka is a traditional Russian rustic smoked and sour soup,
         where a surprising combination of smoked meats and acidic liquids
@@ -70,9 +74,11 @@
         the hard rock variety of smoked meats like ham, salami, sausage
         and bacon, while the pickles, olives and lemon juice bring out
         the mild tartness.</p>
+    </section>
 
+    <section class='instruction'>
       <h2 id="instructions">Instructions</h2>
-      <ol>
+      <ol class="list-instructions">
         <li>Place beef in a soup pot and cover with water. Bring to a boil and add bay leaves with peppercorns.</li>
         <li>Cover and simmer for 1 hour or until fork tender. Then remove the meat and let cool.</li>
         <li>Add onion and carrot to the hot skillet with olive oil and saute until soft and translucent.</li>
